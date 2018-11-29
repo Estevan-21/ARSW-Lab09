@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package ARSW.Preparcial2;
+import java.util.Date;
 import org.springframework.data.annotation.Id;
 
 /**
@@ -16,17 +17,19 @@ public class Cadena {
     public String id;
 
     public String cadena;
+    public String fecha;
 
 
     public Cadena() {}
 
     public Cadena(String cadena) {
-        this.cadena = cadena;        
+        this.cadena = cadena;    
+        fecha=new Date().toString();
     }
 
     @Override
     public String toString() {
-        return String.format(cadena);
+        return String.format(cadena+"--"+fecha);
     }
 
     
