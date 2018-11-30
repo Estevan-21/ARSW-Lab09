@@ -1,5 +1,5 @@
 function saveCadena(cadena){
-	
+	axios.post('/cadena')
 }
 
 function getCadenas(){
