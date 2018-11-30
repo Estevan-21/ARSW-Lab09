@@ -23,6 +23,8 @@ public class StringServicesImp implements StringServices{
     @Autowired
     private StringRepository repository;
     
+    int cont=0;
+    
     public List<String> obtenerCadenas() throws IOException {
          List<Cadena> cadenas= new ArrayList();
          cadenas=repository.findAll();
@@ -31,11 +33,18 @@ public class StringServicesImp implements StringServices{
              strings.add(c.toString());
              System.out.println(c.toString());
          }
+         if(strings.size()>=10){
+             cont=strings.size()-10;
+             for(int i=0;i< cont; i++){
+                 strings.remove(i);
+             }
+         }
         return strings; 
     }
 
     
     public void registrarCadenas(String cadena) throws IOException {
+        cadena=cadena.replace("=","");
         repository.save(new Cadena(cadena));
     }
  

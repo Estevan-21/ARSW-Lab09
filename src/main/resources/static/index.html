@@ -1,44 +1,44 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Preparcial </title>
-  </head>
-  <body>  
-    
-
-
-  <!-- INPUT -->
-  <div>  
-    <form class="form-inline" style='position: absolute; top: 160px; left: 350px'>
-      <div class="input-group text-center md-4">        
-        <input type="text" class="form-control" id="cadena" name="cadena" placeholder="Cadena" aria-describedby="inputGroupPrepend2" required>
-      </div>
-	
-  <!--TABLA-->
-  <div id="table" style='position: absolute; top: 80px; left: -100px;  width: 505px'></div>
+        <title>Preparcial </title>
+    </head>
+    <body>  
 
 
-  <!--BUTTONS-->
-  <form style='position: absolute; top: 260px; left: 500px'>
-    <button type="button" class="btn btn-primary mr-4" onclick="getCadenas()">Enviar</button>
-  </form>
-    
-   
-    
-   <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-3.js"> <!--integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"--></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>    
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script src = "https://unpkg.com/axios/dist/axios.min.js " > </script> 
-	<script src="./js/controller.js" type="text/javascript"></script>
-  </body>
+
+        <!-- INPUT -->
+        <div>  
+            <form class="form-inline" style='position: absolute; top: 160px; left: 350px'>
+                <div class="input-group text-center md-4">        
+                    <input type="text" class="form-control" id="cadena" name="cadena" placeholder="Cadena" aria-describedby="inputGroupPrepend2" required>
+                </div>
+            </form>
+            <!--TABLA-->
+            <div id="table" style='position: absolute; top: 240px; left: 250px;  width: 505px'></div>
+
+
+            <!--BUTTONS-->
+            <form style='position: absolute; top: 160px; left: 580px'>
+                <button type="button" class="btn btn-primary mr-4" onclick="saveCadena()">Enviar</button>
+            </form>
+
+
+
+            <!-- Bootstrap core JavaScript
+             ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="js/jquery-3.js"><!--integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"--></script>
+            <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>    
+            <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+            <script src = "https://unpkg.com/axios/dist/axios.min.js " ></script> 
+            <script src="./js/controller.js" type="text/javascript"></script>
+    </body>
 </html>
